@@ -1,0 +1,97 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-icon slot="start" name="scan"></ion-icon>
+    <ion-searchbar></ion-searchbar>
+    <ion-icon slot="end" name="person"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card id="card">
+    <ion-card-header>
+      <ion-card-title>Selamat Datang</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text>
+        <p> Silahkan Verifikasi data anda di outlet SEHAT terdekat untuk mengaktifkan member anda </p>
+      </ion-text>
+      <ion-avatar>
+        <img src="assets/logo.png" alt="">
+      </ion-avatar>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-infinite-scroll>
+    <ion-infinite-scroll-content>
+      
+
+      <ion-card>
+        <ion-card-content>
+          <ion-segment>
+            <ion-label color="dark">ALL OUTLETS</ion-label>
+            <ion-label color="dark">NEARBY</ion-label>
+          </ion-segment>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="assets/logo.png">
+            </ion-thumbnail>
+            <ion-text>Lorem, ipsum dolor.</ion-text>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="assets/logo.png">
+            </ion-thumbnail>
+            <ion-text>Lorem, ipsum dolor.</ion-text>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="assets/logo.png">
+            </ion-thumbnail>
+            <ion-text>Lorem, ipsum dolor.</ion-text>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+      <ion-badge></ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <ion-icon name="today"></ion-icon>
+      <ion-label>Booking</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="point">
+      <ion-icon name="compass"></ion-icon>
+      <ion-label>Point</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="inbox">
+      <ion-icon name="archive"></ion-icon>
+      <ion-label>Inbox</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="inbox">
+      <ion-icon name="call"></ion-icon>
+      <ion-label>Emergency Call</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
