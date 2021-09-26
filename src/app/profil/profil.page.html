@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button [routerLink]="['/home']" slot="start">
+      <ion-icon name="chevron-back-sharp"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-avatar>
+    <img src="assets/logo.png">
+
+  </ion-avatar>
+  <ion-label>
+    <h2>Nama</h2>
+  </ion-label>
+  <ion-item>
+    <ion-icon name="compass"></ion-icon>
+    <ion-label><h2>0 Point</h2></ion-label>
+  </ion-item>
+  <form>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-input  type="tel" placeholder="Nomor Telepon"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input  type="email" placeholder="Email"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input  type="text" placeholder="Tanggal Lahir"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input  type="text" placeholder="Alamat"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+      <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active"  shape="round" expand="full">Logout</ion-button>
+
+  </form>
+  
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+      <ion-badge></ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <ion-icon name="today"></ion-icon>
+      <ion-label>Booking</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="point">
+      <ion-icon name="compass"></ion-icon>
+      <ion-label>Point</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="inbox">
+      <ion-icon name="archive"></ion-icon>
+      <ion-label>Inbox</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="inbox">
+      <ion-icon name="call"></ion-icon>
+      <ion-label>Emergency Call</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -4,7 +4,20 @@ ion-content{
 ion-icon {
   font-size: 30px;
 }
+ion-searchbar{
+  width: 290px;
+}
 
+ion-button{
+  --background:rgb(255, 255, 255);
+  margin-top: -2px;
+  z-index: -1;
+  ion-icon{
+    color: black;
+    font-size: 30px;
+    top: 0;
+  }
+}
 
 
 #card{
